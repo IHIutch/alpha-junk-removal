@@ -19,8 +19,10 @@
  *
  * @package WordPress
  */
+
 require_once 'vendor/autoload.php';
 
+// Initialize Dotenv
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 $dotenv->required(['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASSWORD']);

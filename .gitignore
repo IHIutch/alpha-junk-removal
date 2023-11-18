@@ -23,3 +23,6 @@ xmlrpc.php
 
 .env
 .env.*
+
+.DS_Store
+composer.lock

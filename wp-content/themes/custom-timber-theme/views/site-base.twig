@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html {{ site.language_attributes }}>
+
+{% include 'site-header.twig' %}
+
+<body class="{{ body_class }} font-karla bg-tan text-brown antialiased">
+
+    {% block content %}
+    <p>Sorry, no content</p>
+    {% endblock %}
+
+    {% include 'site-footer.twig' %}
+
+</body>
+
+</html>

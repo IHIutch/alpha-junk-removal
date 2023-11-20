@@ -3,7 +3,9 @@
 
 {% include 'site-header.twig' %}
 
-<body class="{{ body_class }} font-karla bg-tan text-brown antialiased">
+<body class="{{ body_class }} font-lato antialiased pt-12">
+
+    {% include '/components/top-nav.twig' %}
 
     {% block content %}
     <p>Sorry, no content</p>

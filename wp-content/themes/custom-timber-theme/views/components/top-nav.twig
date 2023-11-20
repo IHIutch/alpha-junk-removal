@@ -1,0 +1,11 @@
+<nav class="fixed top-0 inset-x-0 z-20 bg-black h-12">
+  <div class="container mx-auto h-full">
+    <ul class="flex justify-center gap-2 h-full">
+       {% for item in menu.items %}
+        <li class="h-full">
+          <a href="{{item.link}}" {{item.current ? 'aria-page="current"'}} {{ item.is_target_blank ? 'target="_blank"' }} class="flex items-center h-full px-3 uppercase font-bold text-sm text-white tracking-loose border-b-4 {{item.current ? 'border-white' : 'border-transparent'}}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

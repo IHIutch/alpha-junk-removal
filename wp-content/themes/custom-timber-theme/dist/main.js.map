@@ -1,0 +1,1 @@
+{"mappings":";;;;;;;;;AAGA,OAAO,MAAM,GAAG,CAAA,GAAA,yCAAK;AACrB,CAAA,GAAA,yCAAK,EAAE,KAAK","sources":["assets/main.js"],"sourcesContent":["import './main.css';\n\nimport Alpine from 'alpinejs'\nwindow.Alpine = Alpine\nAlpine.start()"],"names":[],"version":3,"file":"main.js.map","sourceRoot":"../"}

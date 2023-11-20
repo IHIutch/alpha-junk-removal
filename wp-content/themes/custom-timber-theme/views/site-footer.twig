@@ -1,1 +1,20 @@
+{% set logo_image = theme.path ~ '/assets/images/Alpha_logo.png' %}
+
+<footer>
+    <div class="border-b">
+        <div class="container mx-auto py-6">
+            <div class="flex gap-4 items-end">
+                <img class="w-40" src="{{logo_image}}" alt="">
+                <div class="py-2">
+                    <p>(716) 783-1085</p>
+                    <p>Grand Island, NY 14072</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto py-4">
+        <p class="text-center text-xs">Copyright © 2023 Alpha Junk Removal & Services, all rights reserved.</p>
+    </div>
+</footer>
+
 {{ function('wp_footer') }}

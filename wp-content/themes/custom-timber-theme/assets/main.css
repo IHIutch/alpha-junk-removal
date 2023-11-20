@@ -1,0 +1,10 @@
+@import "npm:@fontsource/old-standard-tt/400.css";
+@import "npm:@fontsource/old-standard-tt/700.css";
+
+@import "npm:@fontsource/lato/300.css";
+@import "npm:@fontsource/lato/400.css";
+@import "npm:@fontsource/lato/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

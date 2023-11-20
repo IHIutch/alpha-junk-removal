@@ -24,5 +24,4 @@ xmlrpc.php
 .env.*
 
 .DS_Store
-composer.lock
 node_modules

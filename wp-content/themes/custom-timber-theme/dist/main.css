@@ -1182,6 +1182,10 @@ img, video {
 }
 
 @media (width >= 1280px) {
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -1196,6 +1200,10 @@ img, video {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

@@ -1,5 +1,89 @@
 {% extends "site-base.twig" %}
 
+{% set bg_image_4 = theme.path ~ '/assets/images/bg_image_4.jpg' %}
+
 {% block content %}
-junk-removal
+
+<div>
+
+  <div class="bg-[#0016A2]">
+    <div class="h-[800px] w-full bg-black/70 relative flex items-center justify-center z-0">
+      <div aria-hidden="true" class="h-full w-full object-cover opacity-10 absolute z-0 inset-0 bg-cover" style="background-image:url('{{bg_image_4}}')"></div>
+      <div class="relative z-10 container mx-auto">
+        <h1 class="text-white font-old-standard text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Let Us Help With the Spring Cleaning</h1>
+        <p class="text-2xl text-white max-w-3xl mx-auto text-center mb-12 py-3 px-4 bg-[#0016A2]/70 [clip-path:polygon(98%_0,_100%_50%,_98%_100%,_2%_100%,_0_50%,_2%_0)]">We'll take care of any junk removal you need in Grand Island, NY and the Western NY area</p>
+        <div class="text-center">
+          <a class="bg-white text-sm uppercase text-[#0016A2] py-2.5 px-5 rounded-sm font-bold tracking-widest inline-flex hover:rounded-[32px] hover:text-white hover:bg-[#0016A2] transition-all duration-300" href="/contact-us">Contact Us Today</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% set dumpster_1 = theme.path ~ '/assets/images/dumpster_1.jpg' %}
+{% set trash_1 = theme.path ~ '/assets/images/trash_1.jpg' %}
+
+  <div class="max-w-6xl mx-auto py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <img src="{{trash_1}}" alt="">
+      </div>
+      <div>
+        <img src="{{dumpster_1}}" alt="">
+      </div>
+      <div class="text-lg">
+          <p class="mb-3">As months and years go by, the junk in your garage can start to take over. And who has the time to clean it? Let Alpha Junk Removal & Services get your garage back in shape with junk removal services. Whether it's old appliances, random boxes or bulk materials, our team will take your junk to the nearest disposal. After we're done, we'll even sweep and vacuum your space.</p>
+          <p>We can get the job done as quickly as the same day. Rely on us to help with the spring cleaning. Call 716-783-1085 now for junk removal services in Grand Island, NY and the Western NY area.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto py-16">
+
+    <div class="text-center mb-24">
+      <h2 class="font-old-standard text-4xl text-[#0016A2] font-bold mb-3">No matter the size of the mess, we'll get the job done right</h2>
+      <p class="text-lg max-w-4xl mx-auto">With years of experience, we are equipped to handle any kind of junk and debris removal you need. Whether it's big or small, you can trust us to remove:</p>
+    </div>
+
+  {% set services = [{
+    label: 'Pools',
+  },
+  {
+    label: 'Hot Tubs',
+  },
+  {
+    label: 'Clothing',
+  }] %}
+
+    <div class="grid grid-cols-1 md:grid-cols-3 mb-24 gap-12">
+      {% for service in services %}
+      <div class="group flex items-center justify-center border-[5px] border-[#0016A2] bg-white rounded-sm p-8 hover:rounded-3xl hover:bg-[#0016A2] hover:scale-110 hover:shadow-2xl transition-all duration-300">
+        <span class="font-old-standard uppercase font-bold text-lg text-[#0016A2] group-hover:text-white duration-300">{{service.label}}</a>
+      </div>
+      {% endfor %}
+    </div>
+
+{% set services_two = [{
+    label: 'Furniture',
+  },
+  {
+    label: 'Refrigerators',
+  }] %}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+       {% for service in services_two %}
+      <div class="group flex items-center justify-center border-[5px] border-[#0016A2] bg-white rounded-sm p-10 hover:rounded-3xl hover:bg-[#0016A2] hover:scale-110 hover:shadow-2xl transition-all duration-300">
+        <span class="font-old-standard uppercase font-bold text-2xl text-[#0016A2] group-hover:text-white duration-300">{{service.label}}</a>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+
+  <div class="max-w-4xl mx-auto py-16">
+    <p class="text-center text-lg">All our small pickups start at a minimum of $140. Whenever you're ready, reach out to us to handle even the toughest junk or debris removal jobs.</p>
+  </div>
+
+</div>
+
 {% endblock content %}

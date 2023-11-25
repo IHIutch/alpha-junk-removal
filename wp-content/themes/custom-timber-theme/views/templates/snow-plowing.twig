@@ -8,8 +8,8 @@
 
   {% embed "components/hero-heading.twig" with { 'bg_image': snow_plowing_1 } %}
     {% block content %}
-      <h1 class="text-white font-old-standard text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Don't Get Snowed in This Year</h1>
-      <p class="text-2xl text-white max-w-3xl mx-auto text-center mb-12 py-3 px-4 bg-[#0016A2]/70 [clip-path:polygon(98%_0,_100%_50%,_98%_100%,_2%_100%,_0_50%,_2%_0)]">Schedule professional snow plowing services in Grand Island, NY</p>
+      <h1 class="text-white font-old-standard text-4xl lg:text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Don't Get Snowed in This Year</h1>
+      <p class="text-xl lg:text-2xl text-white max-w-3xl mx-auto text-center mb-12 py-3 px-4 bg-[#0016A2]/70 [clip-path:polygon(98%_0,_100%_50%,_98%_100%,_2%_100%,_0_50%,_2%_0)]">Schedule professional snow plowing services in Grand Island, NY</p>
       <div class="text-center">
         <a class="bg-white text-sm uppercase text-[#0016A2] py-2.5 px-5 rounded-sm font-bold tracking-widest inline-flex hover:rounded-[32px] hover:text-white hover:bg-[#0016A2] transition-all duration-300" href="/contact-us">Contact Us Today</a>
       </div>
@@ -20,25 +20,23 @@
 {% set snow_plowing_2 = theme.path ~ '/assets/images/snow_plowing_2.jpg' %}
 {% set snow_plowing_3 = theme.path ~ '/assets/images/snow_plowing_3.jpg' %}
 
-  <div class="max-w-6xl mx-auto py-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-      <div>
-        <img src="{{snow_plowing_2}}" alt="">
-      </div>
-      <div>
-        <img src="{{snow_plowing_3}}" alt="">
-      </div>
-      <div class="text-lg">
+  <div class="container mx-auto py-16 px-4">
+    <div class="grid lg:grid-cols-3 gap-12">
+      <div class="grid md:grid-cols-2 gap-12">
+          <img src="{{snow_plowing_2}}" alt="">
+          <img src="{{snow_plowing_3}}" alt="">
+       </div>
+      <div class="text-lg max-w-4xl mx-auto">
           <p class="mb-3">Residents of Grand Island, NY are no strangers to snowfall in the winter. If you want to freely navigate your property without having to shovel the snow yourself, you need to call Alpha Junk Removal & Services. We offer timely and efficient snow removal to residential and commercial clients in the area.</p>
           <p>You won't have any trouble pulling out of your driveway or using your sidewalks once we're done. Set up our snow plowing services today.</p>
       </div>
     </div>
   </div>
 
-  <div class="max-w-6xl mx-auto py-16">
+  <div class="container mx-auto py-16 px-4">
 
     <div class="text-center mb-24">
-      <h2 class="font-old-standard text-4xl text-[#0016A2] font-bold mb-3">Why hire a professional snow plowing team?</h2>
+      <h2 class="font-old-standard text-3xl lg:text-4xl text-[#0016A2] font-bold mb-3">Why hire a professional snow plowing team?</h2>
       <div class="max-w-4xl mx-auto">
         <p class="text-lg mb-6">We want to completely support our customers. That's why we can take care of things without you physically being there for the estate cleanout. After a quick discussion about the job, you can electronically sign the contract for us to get started. Then, we'll take care of the rest.</p>
       </div>
@@ -54,7 +52,7 @@
       label: 'Make Sure the Job is Done Right',
     }] %}
 
-    <div class="grid grid-cols-1 md:grid-cols-3 mb-24 gap-12">
+    <div class="grid md:grid-cols-3 mb-24 gap-12">
       {% for service in services %}
       <div class="group flex items-center justify-center border-[5px] border-[#0016A2] bg-white rounded-sm p-8 hover:rounded-3xl hover:bg-[#0016A2] hover:scale-110 hover:shadow-2xl transition-all duration-300">
         <div class="text-center">

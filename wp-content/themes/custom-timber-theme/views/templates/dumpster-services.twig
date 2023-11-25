@@ -8,8 +8,8 @@
 
   {% embed "components/hero-heading.twig" %}
     {% block content %}
-      <h1 class="text-white font-old-standard text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Need a Dumpster Rental?</h1>
-      <p class="text-2xl text-white max-w-3xl mx-auto text-center mb-12 py-3 px-4 bg-[#0016A2]/70 [clip-path:polygon(98%_0,_100%_50%,_98%_100%,_2%_100%,_0_50%,_2%_0)]">Depend on us for dumpster services in Grand Island, NY and the Western NY area</p>
+      <h1 class="text-white font-old-standard text-4xl lg:text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Need a Dumpster Rental?</h1>
+      <p class="text-xl lg:text-2xl text-white max-w-3xl mx-auto text-center mb-12 py-3 px-4 bg-[#0016A2]/70 [clip-path:polygon(98%_0,_100%_50%,_98%_100%,_2%_100%,_0_50%,_2%_0)]">Depend on us for dumpster services in Grand Island, NY and the Western NY area</p>
       <div class="text-center">
         <a class="bg-white text-sm uppercase text-[#0016A2] py-2.5 px-5 rounded-sm font-bold tracking-widest inline-flex hover:rounded-[32px] hover:text-white hover:bg-[#0016A2] transition-all duration-300" href="/contact-us">Contact Us Today</a>
       </div>
@@ -20,25 +20,23 @@
 {% set dumpster_1 = theme.path ~ '/assets/images/dumpster_1.jpg' %}
 {% set trash_1 = theme.path ~ '/assets/images/trash_1.jpg' %}
 
-  <div class="max-w-6xl mx-auto py-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-      <div>
-        <img src="{{trash_1}}" alt="">
+  <div class="container mx-auto py-16 px-4">
+    <div class="grid xl:grid-cols-2 gap-12">
+      <div class="grid md:grid-cols-2 gap-12">
+        <img class="w-full" src="{{trash_1}}" alt="">
+        <img class="w-full"  src="{{dumpster_1}}" alt="">
       </div>
-      <div>
-        <img src="{{dumpster_1}}" alt="">
-      </div>
-      <div class="text-lg">
+      <div class="text-lg max-w-4xl mx-auto">
           <p class="mb-3">Tired of taking multiple trips to the dump? Let Alpha Junk Removal & Services do the work for you. We provide 15-yard and 20-yard dumpster rentals for your convenience. From providing dumpsters for your construction site to hauling away demolition debris from your home, we'll help you keep your space debris-free. After you're done with your project, we'll pick up the dumpster to haul away your trash.</p>
           <p>Get rid of your trash fast. Call 716-783-1085 now for dumpster services in Grand Island, NY and the Western NY area.</p>
       </div>
     </div>
   </div>
 
-  <div class="max-w-6xl mx-auto py-16">
+  <div class="container mx-auto py-16 px-4">
 
     <div class="text-center mb-24">
-      <h2 class="font-old-standard text-4xl text-[#0016A2] font-bold mb-3">Don't know how long you'll need the dumpster?</h2>
+      <h2 class="font-old-standard text-3xl lg:text-4xl text-[#0016A2] font-bold mb-3">Don't know how long you'll need the dumpster?</h2>
       <p class="text-lg max-w-4xl mx-auto">We want to meet our customers' needs, no matter what they're dealing with. Depending how long you need the dumpster rental, we have different rates. Here's what our rates include:</p>
     </div>
 
@@ -55,7 +53,7 @@
     price: '$450',
   }] %}
 
-    <div class="grid grid-cols-1 md:grid-cols-3 mb-24 gap-12">
+    <div class="grid md:grid-cols-3 mb-24 gap-12">
       {% for service in services %}
       <div class="group flex items-center justify-center border-[5px] border-[#0016A2] bg-white rounded-sm p-8 hover:rounded-3xl hover:bg-[#0016A2] hover:scale-110 hover:shadow-2xl transition-all duration-300">
         <div class="text-center">
@@ -67,8 +65,10 @@
     </div>
 
 
-  <div class="max-w-4xl mx-auto py-16">
-    <p class="text-center text-lg">We also charge $100 for each additional ton of debris after the first. When it comes to throwing away your junk, we've got you covered. Don't hesitate to contact us for dumpster services.</p>
+  <div class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-center text-lg">We also charge $100 for each additional ton of debris after the first. When it comes to throwing away your junk, we've got you covered. Don't hesitate to contact us for dumpster services.</p>
+    </div>
   </div>
 
 </div>

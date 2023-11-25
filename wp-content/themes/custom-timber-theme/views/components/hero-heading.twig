@@ -1,6 +1,9 @@
+{% set default_bg_image = theme.path ~ '/assets/images/bg_image_4.jpg' %}
+
+
 <div class="bg-[#0016A2]">
   <div class="h-[800px] w-full bg-black/70 relative flex items-center justify-center z-0">
-    <div aria-hidden="true" class="h-full w-full object-cover opacity-10 absolute z-0 inset-0 bg-cover" style="background-image:url('{{bg_image_4}}')"></div>
+    <div aria-hidden="true" class="h-full w-full object-cover opacity-10 absolute z-0 inset-0 bg-cover" style="background-image:url('{{bg_image|default(default_bg_image)}}')"></div>
     <div class="relative z-10 container mx-auto">
       {% block content %}{% endblock %}
     </div>

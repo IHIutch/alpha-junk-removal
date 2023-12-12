@@ -1,0 +1,21 @@
+{% extends "site-base.twig" %}
+
+{% set snow_plowing_1 = theme.path ~ '/assets/images/snow_plowing_1.jpg' %}
+
+{% block content %}
+
+<div>
+
+  {% embed "components/hero-heading.twig" %}
+    {% block content %}
+      <h1 class="text-white font-old-standard text-4xl lg:text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Service Area</h1>
+    {% endblock %}
+  {% endembed %}
+
+  <div class="container mx-auto py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <iframe class="w-full" src="https://www.google.com/maps/d/u/0/embed?mid=18JAPYaL7rnTyLUMzxYDufc10oRdalBg&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
+    </div>
+  </div>
+
+{% endblock content %}

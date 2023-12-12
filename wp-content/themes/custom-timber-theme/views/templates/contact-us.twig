@@ -1,0 +1,34 @@
+{% extends "site-base.twig" %}
+
+{% set snow_plowing_1 = theme.path ~ '/assets/images/snow_plowing_1.jpg' %}
+
+{% block content %}
+
+<div>
+
+  {% embed "components/hero-heading.twig" %}
+    {% block content %}
+      <h1 class="text-white font-old-standard text-4xl lg:text-6xl font-bold max-w-5xl mb-6 mx-auto text-center leading-tight">Find a Junk Removal Company in Grand Island, NY and the Western NY area</h1>
+      <p class="text-xl lg:text-2xl text-white max-w-3xl mx-auto text-center mb-12 py-3 px-4 bg-[#0016A2]/70 [clip-path:polygon(98%_0,_100%_50%,_98%_100%,_2%_100%,_0_50%,_2%_0)]">Count on our team to haul away your junk and debris</p>
+    {% endblock %}
+  {% endembed %}
+
+
+{% set snow_plowing_2 = theme.path ~ '/assets/images/snow_plowing_2.jpg' %}
+{% set snow_plowing_3 = theme.path ~ '/assets/images/snow_plowing_3.jpg' %}
+
+  <div class="container mx-auto py-16 px-4">
+    <div id="my-reform"></div>
+
+    <script>window.Reform=window.Reform||function(){(Reform.q=Reform.q||[]).push(arguments)};</script>
+    <script id="reform-script" async src="https://embed.reform.app/v1/embed.js"></script>
+    <script>
+        Reform('init', {
+            url: 'https://forms.reform.app/szenkB/contact-us/qugnqo',
+            target: '#my-reform',
+            background: 'transparent',
+        });
+    </script>
+  </div>
+
+{% endblock content %}

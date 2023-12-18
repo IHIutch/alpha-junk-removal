@@ -9,7 +9,7 @@
        {% for item in menu.items %}
         <li class="h-full">
           <a
-          href="{{item.link}}" {{item.current ? 'aria-page="current"'}} {{ item.is_target_blank ? 'target="_blank"' }}
+          href="{{item.link}}" {{item.current ? 'aria-current="page"'}} {{ item.is_target_blank ? 'target="_blank"' }}
           class="flex items-center h-full px-3 pt-1 uppercase font-bold text-sm text-white tracking-loose border-b-4 {{item.current ? 'border-white' : 'border-transparent'}}">
             {{- item.title -}}
           </a>
@@ -64,7 +64,7 @@
         {% for item in menu.items %}
           <li>
             <a
-            href="{{item.link}}" {{item.current ? 'aria-page="current"'}} {{ item.is_target_blank ? 'target="_blank"' }}
+            href="{{item.link}}" {{item.current ? 'aria-current="page"'}} {{ item.is_target_blank ? 'target="_blank"' }}
             class="flex items-center h-12 px-3 uppercase font-bold text-sm text-white tracking-loose -ml-4">
               <span class="border-l-4 pl-4 {{item.current ? 'border-white' : 'border-transparent'}}">{{- item.title -}}</span>
             </a>

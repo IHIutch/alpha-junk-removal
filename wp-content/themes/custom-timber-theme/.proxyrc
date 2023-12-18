@@ -1,8 +1,0 @@
-{
-  "/": {
-    "target": "http://alpha.test",
-    "pathRewrite": {
-      "^/": ""
-    }
-  }
-}

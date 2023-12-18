@@ -2,8 +2,7 @@
   "name": "custom-timber-theme",
   "version": "1.0.0",
   "description": "",
-  "source": "assets/main.js",
-  "main": "dist/main.js",
+  "source": "./assets/main.js",
   "scripts": {
     "start": "parcel",
     "watch": "parcel watch",
